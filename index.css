@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+   font-family: 'Source Sans Pro', sans-serif;
+   background-color: #f5f5f5;
+}
+
+header {
+    width: 376px;
+    padding: 16px 16px 17px 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c6c6c6;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0px;
+}
+
+.posts {
+    width: 375px;
+    margin: 0 auto;
+   
+    
+}
+
+.logo-img {
+    width: 107px;
+    height: 43px;
+    mix-blend-mode: multiply;
+}
+
+.user-img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: url(images/viktorija.jpg);
+    background-size: 80%;
+    background-position: center;
+}
+
+#post {
+    margin-bottom: 33px;
+    background-color: #ffffff;
+}
+
+.post-header {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#avatar {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.title p {
+    margin: 0;
+}
+
+#name, #likes, #username {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#location {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#post-img {
+    width: 375px;
+    height: 375px;
+    margin: 0 auto;
+}
+
+.social {
+    margin: 21px auto;
+    padding: 0 19px 12px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+button {
+    border: none;
+    background-color: #ffffff;
+}
+
+button:hover,
+button:active {
+    scale: 1.15;
+}
+
+.icons {
+    display: flex;
+    column-gap: 15px;
+}
+
+.icon-small {
+    width: 23.3px;
+    height: 23.3px;
+}
+
+#comment {
+    font-weight: 400;
+}
+
