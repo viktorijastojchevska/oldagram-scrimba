@@ -1,4 +1,4 @@
-const posts = [
+let posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
@@ -29,6 +29,14 @@ const posts = [
 ]
 
 let postContent = document.getElementById("post-content");
+let likesFromLocalStorage = JSON.parse(localStorage.getItem("posts"));
+console.log(likesFromLocalStorage);
+
+if (likesFromLocalStorage) {
+    posts = likesFromLocalStorage;   
+}
+
+renderPosts();
 
 function renderPosts() {
     let post = "";
@@ -76,15 +84,15 @@ function renderPosts() {
 
 renderPosts();
 
-
 function likesIncrement(i) {
     let likes = posts[i].likes++;
     renderPosts();
+    localStorage.setItem("posts", JSON.stringify(posts));
 }
 
 
 
-   
+
 
 
     
